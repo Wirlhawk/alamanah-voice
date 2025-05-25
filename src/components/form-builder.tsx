@@ -27,7 +27,7 @@ export default function FormBuilder() {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            name: "",
+            name: undefined,
             message: "",
         },
     });
