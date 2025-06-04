@@ -1,19 +1,13 @@
 import * as React from "react";
 
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import FormBuilder from "./form-builder";
 import Image from "next/image";
 
 export default function FormCard() {
     return (
         <Card className="w-[22rem] shadow-active neu neu-pressed">
-            <CardHeader className="flex flex-row gap-3">
+            <CardHeader className="flex flex-row gap-5 items-center">
                 <Image
                     src="/alamanah.png"
                     alt=""
@@ -22,10 +16,12 @@ export default function FormCard() {
                     className="size-16 my-auto"
                 />
                 <div>
-                    <CardTitle className="text-2xl">Kotak Aspirasi</CardTitle>
-                    <CardDescription>
+                    <CardTitle className="text-2xl font-bold text-blue-600">
+                        Kotak Aspirasi
+                    </CardTitle>
+                    {/* <CardDescription>
                         Lorem, ipsum dolor sit amet consectetur adipisicing{" "}
-                    </CardDescription>
+                    </CardDescription> */}
                 </div>
             </CardHeader>
             <CardContent>
