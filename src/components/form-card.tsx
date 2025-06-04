@@ -7,13 +7,13 @@ import Image from "next/image";
 export default function FormCard() {
     return (
         <Card className="w-[22rem] shadow-active neu neu-pressed">
-            <CardHeader className="flex flex-row gap-5 items-center">
+            <CardHeader className="flex flex-row gap-4 items-center">
                 <Image
-                    src="/alamanah.png"
+                    src="/osis.png"
                     alt=""
                     width={200}
                     height={200}
-                    className="size-16 my-auto"
+                    className="size-16 my-auto object-contain"
                 />
                 <div>
                     <CardTitle className="text-2xl font-bold text-blue-600">
